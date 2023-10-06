@@ -111,7 +111,7 @@ public class TanzirsSingleItemDeliveryService {
 
         System.out.println("Product      Qty      Price       Miles      Total");
         System.out.println(	"----         ---      -----      -----      -----");
-        System.out.println(deliveryProduct + "         " + deliveryQuantity + "       " + priceOfProduct + "         " + deliveryMileage + "         " + totalPrice);
+        System.out.println(deliveryProduct + "         " + deliveryQuantity + "       " + String.format("%.2f",(float) priceOfProduct) + "      " + String.format("%.2f",(float) deliveryMileage) + "       " + String.format("%.2f",(float) totalPrice));
         System.out.println("            Thank you come again!");
         }
 
